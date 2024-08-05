@@ -38,3 +38,7 @@ model.fit(x_train, y_train, epochs=6,verbose=1)
 
 test_loss,test_Accuracy=model.evaluate(x_test,y_test)
 print(test_loss,test_Accuracy)
+import matplotlib.pyplot as plt
+plt.figure()
+plt.imshow(x_train[0])
+plt.show()
